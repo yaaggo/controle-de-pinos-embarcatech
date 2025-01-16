@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/controle-de-pinos-embarcatech.uf2'
+elf = 'build/controle-de-pinos-embarcatech.elf'
