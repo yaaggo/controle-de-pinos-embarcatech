@@ -33,9 +33,13 @@ project(controle-de-pinos-embarcatech C CXX ASM)
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
+# para poder compilar todos os .c de inc
+
+file(GLOB LIBSOURCES "inc/*.c")
+
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(controle-de-pinos-embarcatech main.c )
+add_executable(controle-de-pinos-embarcatech main.c ${LIBSOURCES})
 
 pico_set_program_name(controle-de-pinos-embarcatech "controle-de-pinos-embarcatech")
 pico_set_program_version(controle-de-pinos-embarcatech "0.1")
