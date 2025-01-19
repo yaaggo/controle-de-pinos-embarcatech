@@ -110,6 +110,7 @@ int main() {
     init_keypad();
 
     char last_key = '\0';
+    printf("Pressione a tecla 1, 2 e 3 para acender os LEDs, e 4 para apagar");
 
     while (1) {
         char key = scan_keypad();
