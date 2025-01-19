@@ -9,5 +9,6 @@
 
 // Cabeçalhos
 void led_init();
+void led_turn_off();
 
 #endif
