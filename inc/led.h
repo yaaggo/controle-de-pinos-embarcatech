@@ -8,5 +8,6 @@
 #define LED_BLUE_PIN 12
 
 // Cabeçalhos
+void led_init();
 
 #endif
