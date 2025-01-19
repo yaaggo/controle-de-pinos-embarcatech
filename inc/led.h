@@ -10,5 +10,9 @@
 // Cabeçalhos
 void led_init();
 void led_turn_off();
+void led_green_on();
+void led_blue_on();
+void led_red_on();
+void led_all_on();
 
 #endif

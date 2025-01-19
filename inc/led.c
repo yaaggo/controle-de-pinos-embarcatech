@@ -32,3 +32,31 @@ void led_turn_off() {
     // LED azul
     gpio_put(LED_BLUE_PIN, 0);
 }
+
+// Função que liga apenas o LED verde e desliga os demais
+void led_green_on() {
+    gpio_put(LED_RED_PIN, 0);
+    gpio_put(LED_BLUE_PIN, 0);
+    gpio_put(LED_GREEN_PIN, 1);
+}
+
+// Função que liga apenas o LED azul e desliga os demais
+void led_blue_on() {
+    gpio_put(LED_RED_PIN, 0);
+    gpio_put(LED_GREEN_PIN, 0);
+    gpio_put(LED_BLUE_PIN, 1);
+}
+
+// Função que liga apenas o LED vermelho e desliga os demais
+void led_red_on() {
+    gpio_put(LED_GREEN_PIN, 0);
+    gpio_put(LED_BLUE_PIN, 0);
+    gpio_put(LED_RED_PIN, 1);
+}
+
+// Função que liga todos os LEDs ao mesmo tempo (luz branca)
+void led_all_on() {
+    gpio_put(LED_RED_PIN, 1);
+    gpio_put(LED_GREEN_PIN, 1);
+    gpio_put(LED_BLUE_PIN, 1);
+}
